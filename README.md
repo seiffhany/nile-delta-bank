@@ -1,4 +1,4 @@
-# ![logo](markdown-logo.svg) Nile Delta Bank - Software Engineering Project
+# <img src="markdown-logo.svg" alt="logo" height="30px" /> Nile Delta Bank - Software Engineering Project
 
 You can preview our website through our [deployed version](https://nile-delta-bank.vercel.app/).
 
