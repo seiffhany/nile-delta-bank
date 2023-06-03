@@ -1,0 +1,192 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  font-size: 10px;
+  overflow-x: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Scrollbar styles for Chrome and Safari */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 12px 12px white;
+  border: solid 3px transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 12px 12px #2350B2;
+  border: solid 3px transparent;
+  border-radius: 10px;
+}
+
+/* Scrollbar styles for Firefox */
+/* Note: Firefox does not support customizing the scrollbar appearance */
+
+/* Scrollbar styles for IE and Edge */
+::-ms-scrollbar {
+  width: 12px;
+}
+
+::-ms-scrollbar-track {
+  box-shadow: inset 0 0 12px 12px white;
+  border: solid 3px transparent;
+}
+
+::-ms-scrollbar-thumb {
+  box-shadow: inset 0 0 12px 12px #2350B2;
+  border: solid 3px transparent;
+  border-radius: 10px;
+}
+
+@font-face {
+  font-family: 'Ade';
+  src: url('fonts/ade-display/Ade-Display.otf') format('woff2');
+}
+
+@font-face {
+  font-family: 'Graphik';
+  src: url('fonts/Graphik-Font-Family/GraphikBlack.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Graphik';
+  src: url('fonts/Graphik-Font-Family/GraphikBlackItalic.otf') format('opentype');
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Graphik';
+  src: url('fonts/Graphik-Font-Family/GraphikBold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Graphik';
+  src: url('fonts/Graphik-Font-Family/GraphikBoldItalic.otf') format('opentype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Graphik';
+  src: url('fonts/Graphik-Font-Family/GraphikExtralight.otf') format('opentype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Graphik';
+  src: url('fonts/Graphik-Font-Family/GraphikExtralightItalic.otf') format('opentype');
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Graphik';
+  src: url('fonts/Graphik-Font-Family/GraphikLight.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Graphik';
+  src: url('fonts/Graphik-Font-Family/GraphikLightItalic.otf') format('opentype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Graphik';
+  src: url('fonts/Graphik-Font-Family/GraphikMedium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Graphik';
+  src: url('fonts/Graphik-Font-Family/GraphikMediumItalic.otf') format('opentype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Graphik';
+  src: url('fonts/Graphik-Font-Family/GraphikRegular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Graphik';
+  src: url('fonts/Graphik-Font-Family/GraphikRegularItalic.otf') format('opentype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Graphik';
+  src: url('fonts/Graphik-Font-Family/GraphikSemibold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Graphik';
+  src: url('fonts/Graphik-Font-Family/GraphikSemiboldItalic.otf') format('opentype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Graphik';
+  src: url('fonts/Graphik-Font-Family/GraphikSuper.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Graphik';
+  src: url('fonts/Graphik-Font-Family/GraphikSuperItalic.otf') format('opentype');
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Graphik';
+  src: url('fonts/Graphik-Font-Family/GraphikThin.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Graphik';
+  src: url('fonts/Graphik-Font-Family/GraphikThinItalic.otf') format('opentype');
+  font-weight: 100;
+  font-style: italic;
+}

@@ -1,0 +1,139 @@
+.login-card {
+    width: 120rem;
+    height: 70rem;
+    border: 0.3rem solid transparent;
+    border-radius: 2.2rem;
+    background: linear-gradient(white, white) padding-box,
+        linear-gradient(to right, #2350B2, #2EA6F6) border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.login-icon {
+    /* flex-grow: 2; */
+    width: 68rem;
+    height: auto;
+    position: absolute;
+}
+
+.right-section-login {
+    flex-grow: 1;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: 40%;
+}
+
+.gay-part-login {
+    width: 80%;
+    height: 30%;
+    background-image: linear-gradient(to right, #2350B2, #2EA6F6);
+    border-top-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.kalam-big-login {
+    font-family: "outfit";
+    font-weight: 900;
+    font-size: 5rem;
+    color: white;
+    margin-left: 8%;
+    margin: 0;
+}
+
+.kalam-small-login {
+    font-family: "outfit";
+    font-weight: 100;
+    color: #FFFFFF;
+    margin-left: 8%;
+    margin-bottom: 10%;
+    font-size: 2rem;
+    margin: 0;
+    margin-bottom: 4rem;
+}
+
+.mini-bank-icon-login {
+    position: relative;
+    height: 5rem;
+    top: 2.5rem;
+    margin-top: 3rem;
+    margin-left: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.kalam-label {
+    font-family: "outfit";
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #2350B2;
+}
+
+.joe-gradient {
+    background-image: transparent;
+    color: #2FA6F7;
+    border: 0.2rem solid #2FA6F7;
+    font-size: 1.5rem;
+    font-weight: 600;
+    height: 4rem;
+}
+
+
+.joe-gradient:hover {
+    cursor: pointer;
+    background-image: linear-gradient(to right, #2350B2, #2EA6F6);
+    border: none;
+    color: white;
+}
+
+.bodia-kalam-login {
+    font-family: 'outfit';
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #A7A7A7;
+}
+
+.bodia-border-login {
+    border: 0.2rem solid #A7A7A7;
+    font-family: 'outfit';
+    font-size: 1.5rem;
+    font-weight: 600;
+    height: 4rem;
+}
+
+
+.bodia-kalam-2-login {
+    font-family: 'outfit';
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #616161;
+}
+
+.bodia-border-login:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+.remeber-me-text {
+    font-family: 'outfit';
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #616161;
+}
+
+.forgot-password {
+    font-family: 'outfit';
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #2350B2;
+}

@@ -1,0 +1,299 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.delta_tab_z_index {
+  z-index:5;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-size: 2.5rem;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.main_page {
+  display: flex;
+  color: #505050;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 300;
+}
+
+.nav_menu {
+  z-index: 500;
+  width: 25vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 0;
+  /* margin-right: 10rem; */
+  /* background-color: blue; */
+  border-right: 0.1rem solid #CACACA;
+}
+
+.nav_menu_header {
+  display: flex;
+  background-image: linear-gradient(to left, #2350B2 , #2EA6F6);
+  height: 13rem;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem;
+}
+
+.nav_menu_links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav_menu_links ul {
+  padding: 0;
+  margin: 0;
+  width: 75%;
+}
+
+#nav_menu_header--image {
+  fill: white;
+}
+
+.list-item {
+  display: flex;
+  list-style: none;
+  font-size: 2rem;
+  width: 100%;
+  border-radius: 1.5rem;
+  /* background-color: rgba(0, 0, 0, 7%); */
+  margin-bottom: 1rem;
+  padding: 1.8rem;
+  align-items: center;
+  transition: all 100ms ease-in-out;
+}
+
+.list-item:hover {
+  background-color: rgba(0, 0, 0, 3%);
+  cursor: pointer;
+}
+
+.list-item img {
+  height: 2.4rem;
+  margin-right: 2.3rem;
+  margin-left: 1rem;
+  filter: invert(28%) sepia(6%) saturate(8%) hue-rotate(357deg) brightness(96%) contrast(83%);
+}
+
+.selected_item {
+  background-color: rgba(0, 0, 0, 7%);
+  color: #2B8BE1;
+}
+
+.selected_item img{
+  filter: invert(65%) sepia(94%) saturate(4143%) hue-rotate(186deg) brightness(92%) contrast(91%);
+}
+
+.selected_item:hover {
+  background-color: rgba(0, 0, 0, 7%);
+}
+
+.profile-box {
+  display: flex;
+  justify-content: start;
+  margin-left: 7rem;
+}
+
+.profile-image img {
+  /* margin-bottom: 5rem; */
+  height: 12rem;
+  margin-right: 2rem;
+}
+
+.profile-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem 0;
+}
+
+.profile-image h1 {
+  font-family: 'Ade';
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: black;
+}
+
+.edit-button {
+  margin-top: 0.5rem;
+  display: flex;
+  font-size: 1.45rem;
+  font-weight: 400;
+  align-items: center;
+  justify-content: center;
+
+  width: 7.1rem;
+  height: 2.9rem;
+
+  border-radius: 10rem;
+  border: 0.1rem solid #2EA6F6;
+  color: #2EA6F6;
+  transition: all 100ms ease-in-out;
+  /* background-color: #2350B2; */
+}
+
+.edit-button:hover {
+  background-color: #2EA6F6;
+  color: white;
+  cursor: pointer;
+}
+
+.divider {
+  border-top: 0.01rem solid #CACACA;
+  width: 100%;
+  margin-top: 2.5rem;
+  margin-bottom: 0;
+}
+
+.divider_bottom {
+  margin-top: 0;
+}
+
+.panel_divider {
+  margin-bottom: 2.5rem;
+}
+
+.main_page_right {
+  margin-left: 25vw;
+  width: 75vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main_page_right_body {
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+
+.main_page_right h1 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 7rem;
+  font-weight: 200;
+  margin-top: 6rem;
+  margin-bottom: 5rem;
+  color: #2350B2;
+}
+
+.main_page_header {
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  top: 0;
+  z-index:100;
+}
+
+.scrollable_body {
+  margin-top: 32rem;
+}
+
+.tab_section {
+  background-color: white;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  /* margin-top: 23.5rem; */
+  margin-left: 10.5rem;
+  width: 100%;
+  height: 5rem;
+}
+
+.delta_tab_item {
+  /* color: #2350B2; */
+  /* margin-right: 5rem; */
+  padding: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  font-size: 2rem;
+  transition: all 200ms ease-in-out;
+
+  /* background-color: tomato; */
+}
+
+.delta_tab_item:hover {
+  cursor: pointer;
+  color: rgba(0, 0, 0, 50%);
+  /* transform: translateY(-0.1rem); */
+}
+
+.delta_tab_item_active, .delta_tab_item_active:hover {
+  color: #2350B2;
+  border-bottom: 0.2rem solid #2350B2;
+  /* transform: translateY(0); */
+}

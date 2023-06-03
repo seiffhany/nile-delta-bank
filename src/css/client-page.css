@@ -1,0 +1,263 @@
+.bold {
+  font-weight: 700;
+}
+
+.client_section h2 {
+  font-size: 3.6rem;
+}
+
+.blurred-balance {
+  filter: blur(1.2rem);
+}
+
+.bodia-border {
+  border: 2px solid #2350B2;
+  border-radius: 1.5rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2rem;
+  font-style: 'outfit';
+  font-size: 2rem;
+  margin-top: 7.5rem;
+  color: #2350B2;
+}
+
+.bodia-border:hover {
+  border: 2px solid #2350B2;
+  border-radius: 1.5rem;
+  font-style: 'outfit';
+  font-size: 2rem;
+  color: white;
+  background-color: #2350B2;
+}
+
+.loan_header_divider {
+  border-top: 0.01rem solid #CACACA;
+  width: 100%;
+  margin-top: 1.5rem;
+  margin-bottom: 4.5rem;
+}
+
+.my_loans_header {
+  display: flex;
+  align-items: center;
+}
+
+.my_loans_header img {
+  height: 3rem;
+  margin-left: 1.5rem;
+  transform: translateY(0.3rem);
+  transition: all 120ms ease-in-out;
+  filter: invert(28%) sepia(99%) saturate(1225%) hue-rotate(196deg) brightness(98%) contrast(83%);
+}
+
+.my_loans_header img:hover {
+  cursor: pointer;
+  filter: none;
+}
+
+.request-item {
+  margin-bottom: 4.5rem;
+}
+
+.request-item h2 {
+  color: #2350B2;
+  font-size: 2.6rem;
+  font-weight: 400;
+  margin-bottom: 2.5rem;
+}
+
+.card-num {
+  color: #2350B2;
+  font-size: 2.6rem;
+  font-weight: 400;
+  gap: 2.2rem;
+}
+
+.card-num-d {
+  color: #2350B2;
+  font-size: 2.6rem;
+  font-weight: 400;
+}
+
+.card-num-d:hover {
+  cursor: pointer;
+}
+
+.back-icon {
+  filter: invert(29%) sepia(64%) saturate(3894%) hue-rotate(217deg) brightness(73%) contrast(87%);
+  z-index: -5;
+  height: 3rem;
+}
+
+.back-icon:hover {
+  cursor: pointer;
+}
+
+.bodia-balance {
+  font-family: 'outfit';
+  font-weight: 500;
+}
+
+.request-item-submission {
+  color: rgba(80, 80, 80, 40%);
+  font-weight: 300;
+}
+
+.credit_card_items {
+  display: flex;
+}
+
+.credit_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 2.5rem;
+  margin-right: 4rem;
+  background-color: #2350B2;
+  color: white;
+  font-size: 2.2rem;
+  border-radius: 1.5rem;
+  width: 35rem;
+  height: 19rem;
+  background-image: linear-gradient(to right, #2350B2, #2EA6F6);
+  transition: all 200ms ease-in-out;
+}
+
+.credit_card:hover,
+.account_card:hover {
+  cursor: pointer;
+  transform: translate(1rem, -1rem);
+  box-shadow: -1rem 1rem 2rem rgba(0, 0, 0, 0.25);
+}
+
+.credit_card img {
+  height: 3.5rem;
+  padding: 0;
+}
+
+.credit_card .visa {
+  height: 3rem;
+  padding: 0;
+  filter: invert(100%) sepia(2%) saturate(1374%) hue-rotate(315deg) brightness(113%) contrast(100%);
+}
+
+
+.credit_card p {
+  padding: 0;
+}
+
+.credit_card_header {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-evenly;
+  height: 100%;
+  width: 100%;
+}
+
+.credit_card:active {
+  transform: translate(0.5rem, -0.5rem);
+  box-shadow: -0.5rem 0.5rem 2rem rgba(0, 0, 0, 0.5);
+}
+
+.account_card {
+  display: flex;
+  flex-direction: column;
+  width: 37rem;
+  height: 19rem;
+  /* background-color: pink; */
+  border: 0.2rem solid #2350B2;
+  /* overflow: hidden; */
+  border-radius: 1.5rem;
+  background: linear-gradient(to right, white, white) padding-box,
+    linear-gradient(to right, #2350B2, #2EA6F6) border-box;
+  margin-right: 4rem;
+  border-color: transparent;
+  transition: all 180ms ease-in-out;
+}
+
+.loan-fields h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.account_card_header {
+  /* flex: 1; */
+  background-image: linear-gradient(to right, #2350B2, #2EA6F6);
+  border-radius: 1rem 1rem 0 0;
+  padding: 3.6rem 3rem;
+  display: flex;
+  align-items: center;
+  color: white;
+  /* font-family: 'Outfit'; */
+  font-size: 3.2rem;
+  font-weight: 400;
+  width: 100%;
+  height: 30%;
+}
+
+.account_card_body {
+  /* flex: 2; */
+  gap: 2rem;
+  padding: 0 3rem;
+  font-size: 2rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  color: rgba(0, 0, 0, 0.4);
+  font-weight: 400;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.account_card_sub {
+  /* display: flex; */
+  width: 100%;
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+.account_card:hover {
+  cursor: pointer;
+  transform: translate(0.8rem, -0.8rem);
+  box-shadow: -0.8rem 0.8rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.account_card:active {
+  transform: translate(0.5rem, -0.5rem);
+  box-shadow: -0.5rem 0.5rem 2rem rgba(0, 0, 0, 0.4);
+
+}
+
+.account_card_items {
+  display: flex;
+}
+
+.client_section {
+  margin-bottom: 8rem;
+}
+
+.show_button {
+  height: 5.7rem;
+  width: 20rem;
+  border-radius: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2350B2;
+  font-weight: 400;
+  /* background-color: purple; */
+  border: 0.28rem solid #2350B2;
+  font-size: 2rem;
+  transition: all 120ms ease-in-out;
+}
+
+.show_button:hover {
+  background-color: #2350B2;
+  color: white;
+  cursor: pointer;
+}

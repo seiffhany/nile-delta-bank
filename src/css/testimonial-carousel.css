@@ -1,0 +1,230 @@
+.testimonial-carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80rem;
+  height: 60rem;
+  margin: 0 auto;
+}
+
+.testimonial-card {
+  border-radius: 3rem;
+  background-color: white;
+  padding: 0.3rem;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  height: 35rem;
+  width: 80rem;
+  -webkit-box-shadow: 0 0 3rem 0 rgba(0, 0, 0, 0.25);
+  transition: opacity 0.3s ease-in-out, translate 0.3s ease-in-out;
+  translate: 0;
+  border: 0.3rem transparent;
+  border-radius: 3rem; background-image: linear-gradient(white, white), linear-gradient(to right, #2350B2, #2EA6F6);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+/* .testimonial-card.fade {
+  opacity: 0;
+  transition: 300ms
+} */
+
+.testimonial-card.move-next {
+  /* translate: -50px; */
+  animation: move-next 0.5s cubic-bezier(.54,-0.01,.21,1.15);
+  /* transition: opacity 0.3s ease-in-out, translate 0.3s ease-in-out; */
+}
+.testimonial-card.move-next-new {
+  /* translate: -50px; */
+  animation: move-next-new 0.5s cubic-bezier(.54,-0.01,.21,1.15);
+  /* transition: opacity 0.3s ease-in-out, translate 0.3s ease-in-out; */
+}
+
+@keyframes move-next {
+  0% {
+    translate: 0;
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 0;
+  }
+
+  100% {
+    translate: -10%;
+  }
+}
+@keyframes move-next-new {
+  0% {
+    translate: 10%;
+    opacity: 0;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    translate: 0;
+  }
+}
+.testimonial-card.move-prev {
+  animation: move-prev 0.5s cubic-bezier(.54,-0.01,.21,1.15);
+}
+.testimonial-card.move-prev-new {
+  animation: move-prev-new 0.5s cubic-bezier(.54,-0.01,.21,1.15);
+}
+
+@keyframes move-prev {
+  0% {
+    translate: 0;
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 0;
+  }
+
+  100% {
+    translate: 10%;
+  }
+}
+@keyframes move-prev-new {
+  0% {
+    translate: -10%;
+    opacity: 0;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    translate: 0;
+  }
+}
+
+.testimonial-card-pic {
+  width: 20rem;
+  height: 20rem;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.testimonial-card h3 {
+  font-family: Ade;
+  font-weight: normal;
+  font-size: 2rem;
+  margin: 0%;
+}
+
+.testimonial-card p {
+  font-family: Graphik;
+  font-weight: lighter;
+  font-size: 2.5rem;
+  width: 45rem;
+  margin-right: 5rem;
+  margin-top: 15rem;
+}
+
+.testimonial-card p::before {
+    
+    content: '“';
+    font-family: Graphik;
+    font-weight: 900;
+    color: #2350b2;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 1;
+    margin-right: 0.5rem;
+    margin-bottom: -0.5rem;
+    font-size: 4rem;
+}
+
+.testimonial-image-name {
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.testimonial-text-rating {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.rating {
+  height: 2rem;
+  margin-top: 2.5rem;
+  margin-bottom: -12.5rem;
+}
+
+.arrows {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 150%;
+  margin-top: -20rem;
+}
+
+.arrow {
+  cursor: pointer;
+  width: 5rem;
+  height: 5rem;
+  opacity: 1;
+  background-color: #E9E9E9;
+  border-radius: 5rem;
+  padding: 1rem;
+}
+
+.arrow:hover {
+  
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 25rem;
+}
+
+.dot {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: #D9D9D9;
+  margin: 0 0.5rem;
+  transition: all 300ms cubic-bezier(.4,.94,.41,1.01);
+}
+
+.dot.active {
+  background-color: #939393;
+  width: 3rem;
+  border-radius: 2rem;
+}
+
+/* .fulljustify {
+  text-align: justify;
+  text-align-last: left;
+} */
+/* .fulljustify:after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+} */
+#tagline-testimonial {
+  overflow: hidden;
+  text-align: left;
+  /* text-align-last: left; */
+  font-weight: 200;
+  line-height: 1.5em;
+}
