@@ -6,7 +6,7 @@ This website was fully designed by us. No templates used :)
 
 ## To access all pages (Client, Banker & Admin)
 
-When logging in through the login page, using the following credentials to access their corresponding pages:
+When logging in through the login page, use the following credentials to access their corresponding pages:
 
 | Page | Email | Password
 | -- | -- | --
